@@ -107,6 +107,7 @@ html {
 body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
+  color: #e2e3ed;
   text-align: left;
 }
  
@@ -122,12 +123,14 @@ a {
  
 h2 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   margin: 20px 0;
   font-size: 1.125em;
 }
@@ -163,6 +166,7 @@ address {
 
 header,
 footer{
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,6 +189,7 @@ header .content-wrapper{
 }
 
 .header-divider{
+  background-color: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -196,6 +201,9 @@ header nav{
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul{
@@ -204,11 +212,16 @@ header nav ul{
   width: 100%;
 }
 
+header nav ul li{
+  font-size: 1.125em;
+}
+
 
 /* Footer Styles */
 
 footer{
   flex-direction: column;
+  text-align: center;
 }
 
 footer p{
@@ -250,13 +263,47 @@ footer .copyright{
   flex-flow: row wrap;
 }
 
+.hero-area h1{
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
 /* Aside */
 
 aside{
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -290,6 +337,7 @@ aside{
 /* Reviews */
 
 .reviews{
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -297,6 +345,7 @@ aside{
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1em;
 }
 
 .reviews h3{
@@ -309,6 +358,7 @@ aside{
   =====================================================================*/
 
 .mission{
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,6 +366,7 @@ aside{
 }
 
 .contact-section{
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,6 +383,7 @@ aside{
 
 
 .faq{
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -348,10 +400,15 @@ aside{
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1em;
 }
 
 .faq-content{
   margin-bottom: 50px;
+}
+
+.faq-content h4{
+  line-height: 1.333em;
 }
 
 
