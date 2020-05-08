@@ -100,11 +100,11 @@ textarea {
 
    /* General Styles */
  
-html {
+html{
 	font-size: 16px;
 }
  
-body {
+body{
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
@@ -112,42 +112,34 @@ body {
 }
  
 ul, 
-ol {
+ol{
  list-style-type: none;
 }
  
-a {
+a{
 	color: #e2e3ed;
   text-decoration: none;
 }
  
-h2 {
+h2{
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
 }
  
 h3, 
-h4 {
+h4{
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   margin: 20px 0;
   font-size: 1.125em;
 }
  
-p {
+p{
   font-size: .875em;
   line-height: 1.285;
 }
- 
-img {
- 
-}
- 
-figure {
- 
-}
- 
+
 address {
  font-style: normal;
 }
@@ -381,7 +373,6 @@ input[type=button] {
   FAQ Page
   =====================================================================*/
 
-
 .faq{
   background-color: #527158;
   display: flex;
@@ -410,7 +401,6 @@ input[type=button] {
 .faq-content h4{
   line-height: 1.333em;
 }
-
 
 
 /* ==========================================================================
