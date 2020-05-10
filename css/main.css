@@ -140,6 +140,14 @@ p{
   line-height: 1.285;
 }
 
+figure{
+  margin: 0;
+}
+
+img{
+  width: 100%;
+}
+
 address {
  font-style: normal;
 }
@@ -149,10 +157,6 @@ address {
  margin: 50px 0;
 }
 
-.content-wrapper{
-  width: 90%;
-  margin: 50px 0;
-}
 /*----- Base Header - Footer Styles -----*/
 
 
@@ -178,6 +182,14 @@ header .content-wrapper{
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider{
@@ -253,6 +265,9 @@ footer .copyright{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/girl-in-nature.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1{
@@ -304,6 +319,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/retreat-img.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2{
@@ -501,6 +518,16 @@ input[type=button] {
     margin: 100px 0;
   }
 
+  h2{
+    font-size: 2.25em;
+    line-height: 1.333em;
+  }
+
+  h3{
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+
   /* Header */
   header{
     justify-content: space-around;
@@ -510,6 +537,10 @@ input[type=button] {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header figure{
+    width: 30%;
   }
 
   header nav{
@@ -526,6 +557,16 @@ input[type=button] {
 
   /* Hero Area */
 
+  .hero-area{
+    min-height: 600px;
+  }
+
+  .hero-area h1{
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0;
+  }
+
   /* Aside */
   aside .content-wrapper{
     margin: 50px 0;
@@ -541,6 +582,11 @@ input[type=button] {
   }
 
   /* Features */
+
+  .features h2{
+    margin-bottom: 20px;
+  }
+
   .features-article {
     display: flex;
     justify-content: center;
@@ -550,7 +596,7 @@ input[type=button] {
   }
 
   .features .features-item-description{
-    width: 50%;
+    width: 60%;
   }
 
   /* Reviews */
@@ -559,8 +605,18 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews h2{
+    width: 85%;
+  }
+
+  .reviews article figure,
   .reviews article div {
     width: 49%;
+  }
+
+  .revies h3{
+    width: 75%;
+    margin: 0;
   }
 
   /* Footer */
@@ -569,14 +625,24 @@ input[type=button] {
     margin: 100px 0;
   }
 
-  .footer-content{
+  footer .footer-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   .footer .contact{
     margin-bottom: 0;
+  }
+
+  footer h4{
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  fotter p{
+    line-height: 1.285em;
   }
 
   footer .copyright{
@@ -608,6 +674,10 @@ input[type=button] {
        align-items: flex-start;
      }
 
+     .contact-content h4{
+       font-size: 1.5em;
+     }
+
      /* ==========================================================================
      FAQ Page
      ========================================================================== */
@@ -624,16 +694,47 @@ input[type=button] {
      .faq h2{
        width: 100%;
      }
+
+     .faq h4,
+     .faq p{
+       font-size: .875em;
+       line-height: 1.125em;
+     }
 }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles Here */ 
+
+    header {
+      padding: 15px 0;
+    }
+
+    .hero-area{
+      min-height: 775px;
+    }
+
     .content-wrapper {
       max-width: 960px;
   }
 
+    h2{
+      font-size: 2.25em;
+    }
+
+    h3,
+    h4{
+      font-size: 1.875em;
+    }
+
+    p{
+      font-size: 1.125em;
+      line-height: 1.333em;
+    }
+
   /* Hero */
+
   .hero-area h1 {
+    font-size: 3.75em;
     width: 60%;
   }
 
@@ -647,7 +748,12 @@ input[type=button] {
     width: 30%;
   }
 
+  .form-despcription p{
+    font-size: 1.125em;
+  }
+
   /* Features */
+
   .features h2 {
     width: 90%;
   }
@@ -657,8 +763,17 @@ input[type=button] {
   }
 
   /* Reviews */ 
+
   .reviews article div {
     width: 42%;
+  }
+
+  .reviews h2{
+    padding-bottom: 50px;
+  }
+
+  footer h4{
+    font-size: 1.875em;
   }
 
   /* ==========================================================================
@@ -667,10 +782,12 @@ input[type=button] {
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
+    margin-bottom: 40px;
   }
 
-  .contact-section .content-wrapper h2 {
-    margin-bottom: 40px;
+  .contact-content h4{
+    font-size: 1.875em;
   }
 
 
@@ -679,6 +796,13 @@ input[type=button] {
   ========================================================================== */
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h4,
+  .faq p{
+    font-size: 1.125em;
+    line-height: 1em;
   }
 
 }
